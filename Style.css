@@ -1,0 +1,132 @@
+﻿* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom left, #eb3f4b, #7d0711) no-repeat;
+}
+.conatiner {
+    width: 1200px;
+    height: auto;
+    margin: auto;
+}
+.product_Card {
+    display: flex;
+    width: 650px;
+    height: 400px;
+    background: white;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.left_card, .right_card {
+    position: relative;
+}
+.left_card {
+    display: table;
+    width: 300px;
+    height: 415px;
+    background: linear-gradient(#eb3f4b 50%, azure 50%);
+    position: absolute;
+    top: -8px;
+    left: 2px;
+    border-radius: 4px;
+}
+.left_card img {
+    width: 130px;
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.right_card {
+    width: 350px;
+    height: auto;
+    box-sizing: border-box;
+    padding: 15px;
+    position: absolute;
+    top: -8px;
+    right: 0;
+    border-radius: 4px;
+}
+.right_card h5 {
+    margin-top: 15px;
+    padding-bottom: 10px;
+}
+.right_card span {
+    font-size: 20px;
+    padding: 8px 0;
+}
+.right_card p {
+    font-size: 14px;
+    text-align: justify;
+    text-justify: inter-word;
+    padding: 30px 0;
+}
+.right_card input[type='checkbox'] {
+    display: block;
+    float: right;
+    margin: 0 2px;
+}
+.Buy-Btn {
+    display: block;
+    width: 250px;
+    outline: none;
+    border: 0;
+    background-color: transparent;
+    background: #eb3f4b;
+    padding: 10px;
+    color: white;
+    border-radius: 50px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 80px auto;
+}
+/* Media Query */
+
+@media screen and (max-width: 576px) {
+    .product_Card {
+        width: 80%;
+        height: auto;
+        min-height: 566px;
+    }
+    .left_card img {
+        width: 100px;
+        max-width: 95%;
+        height: auto;
+    }
+    .left_card {
+        width: 100%;
+        height: 350px;
+        left: 0px;
+    }
+    .right_card {
+        width: 100%;
+        margin: auto;
+        top: 40%;
+        left: 0;
+    }
+    .right_card h5 {
+        margin-top: 7px;
+        padding-bottom: 0px;
+    }
+    .right_card span {
+        font-size: 0px;
+        padding: 0px 0;
+    }
+    .right_card p {
+        padding: 0px 0;
+    }
+    .right_card input[type='checkbox'] {
+        display: block;
+        float: right;
+        margin: 0 2px;
+    }
+}
+
